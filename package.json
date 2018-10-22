@@ -15,7 +15,6 @@
     "analyz": "nuxt build --analyzer",
     "generate": "nuxt generate",
     "start": "cross-env NODE_ENV=production node server.js",
-    "install": "cnpm i --python=python2.7",
     "lint": "eslint --ext .js,.vue --ignore-path .eslintignore .",
     "format": "prettier-eslint --write *.js,*.vue"
   },
