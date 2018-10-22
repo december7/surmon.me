@@ -104,7 +104,7 @@ module.exports = {
         return [
           [
             "@nuxtjs/babel-preset-app",
-            { targets: isServer ? { node: "10.4.0" } : { chrome: 69 } }
+            { targets: isServer ? { node: "10.12.0" } : { chrome: 69 } }
           ]
         ]
       },
