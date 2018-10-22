@@ -125,7 +125,7 @@ export async function setContext(app, context) {
       payload: context.payload,
       error: context.error,
       base: '/',
-      env: {"baseUrl":"https://api.qiekenol.com","HOST_URL":"https://qiekenol.com"}
+      env: {"baseUrl":"https://api.qiekenol.com","HOST_URL":"https://api.qiekenol.com"}
     }
     // Only set once
     if (context.req) app.context.req = context.req
