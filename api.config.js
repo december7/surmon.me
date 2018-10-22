@@ -7,8 +7,8 @@
 const { isProdMode } = require('./environment')
 
 module.exports = {
-  cdnUrl: isProdMode ? 'https://cdn.surmon.me' : '',
-  proxyUrl: isProdMode ? 'https://surmon.me/proxy/' : '/proxy/',
-  baseUrl: isProdMode ? 'https://api.surmon.me' : 'http://localhost:8000',
-  socketHost: isProdMode ? 'https://surmon.me' : 'http://localhost:3000'
+  cdnUrl: isProdMode ? '' : '',
+  proxyUrl: isProdMode ? 'http://qiekenol.com/proxy/' : '/proxy/',
+  baseUrl: isProdMode ? 'http://api.qiekenol.com' : 'http://localhost:8000',
+  socketHost: isProdMode ? 'https://qiekenol.com' : 'http://localhost:3000'
 }
