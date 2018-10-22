@@ -8,7 +8,7 @@ const { isProdMode } = require('./environment')
 
 module.exports = {
   cdnUrl: isProdMode ? '' : '',
-  proxyUrl: isProdMode ? 'http://qiekenol.com/proxy/' : '/proxy/',
-  baseUrl: isProdMode ? 'http://api.qiekenol.com' : 'http://localhost:8000',
+  proxyUrl: isProdMode ? 'https://qiekenol.com/proxy/' : '/proxy/',
+  baseUrl: isProdMode ? 'https://api.qiekenol.com' : 'http://localhost:8000',
   socketHost: isProdMode ? 'https://qiekenol.com' : 'http://localhost:3000'
 }
