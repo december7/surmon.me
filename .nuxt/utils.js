@@ -118,14 +118,14 @@ export async function setContext(app, context) {
   if (!app.context) {
     app.context = {
       isStatic: process.static,
-      isDev: false,
+      isDev: true,
       isHMR: false,
       app,
       store: app.store,
       payload: context.payload,
       error: context.error,
       base: '/',
-      env: {"baseUrl":"https://api.qiekenol.com","HOST_URL":"https://api.qiekenol.com"}
+      env: {"baseUrl":"http://localhost:8000","HOST_URL":"http://localhost:3000"}
     }
     // Only set once
     if (context.req) app.context.req = context.req

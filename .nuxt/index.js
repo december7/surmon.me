@@ -11,7 +11,6 @@ import { setContext, getLocation, getRouteData } from './utils'
 import { createStore } from './store.js'
 
 /* Plugins */
-import nuxt_plugin_swplugin_1200e1f9 from 'nuxt_plugin_swplugin_1200e1f9' // Source: ./sw.plugin.js (ssr: false)
 import nuxt_plugin_axios_88d76740 from 'nuxt_plugin_axios_88d76740' // Source: ./axios.js
 import nuxt_plugin_vueextend_2b93c540 from 'nuxt_plugin_vueextend_2b93c540' // Source: ../plugins/vue-extend.js
 import nuxt_plugin_loadedtask_709ded80 from 'nuxt_plugin_loadedtask_709ded80' // Source: ../plugins/loaded-task.js
@@ -174,7 +173,6 @@ async function createApp (ssrContext) {
   if (typeof nuxt_plugin_highlight_54dd1b39 === 'function') await nuxt_plugin_highlight_54dd1b39(app.context, inject)
   
   if (process.client) { 
-    if (typeof nuxt_plugin_swplugin_1200e1f9 === 'function') await nuxt_plugin_swplugin_1200e1f9(app.context, inject)
     if (typeof nuxt_plugin_swiper_68e7f06e === 'function') await nuxt_plugin_swiper_68e7f06e(app.context, inject)
     if (typeof nuxt_plugin_analytics_2e48c327 === 'function') await nuxt_plugin_analytics_2e48c327(app.context, inject)
     if (typeof nuxt_plugin_emoji233333_0f0538d9 === 'function') await nuxt_plugin_emoji233333_0f0538d9(app.context, inject)
