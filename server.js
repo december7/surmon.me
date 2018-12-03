@@ -15,10 +15,9 @@ const { Nuxt, Builder } = require('nuxt')
 process.noDeprecation = true
 
 const config = require('./nuxt.config')
-const { isProdMode, environment } = require('./environment')
+const { environment } = require('./environment')
 const port = environment.PORT || 3000
-const host = isProdMode ? '0.0.0.0' : '0.0.0.0'
-// const host = isProdMode ? (environment.HOST || '127.0.0.1') : '0.0.0.0'
+const host = '0.0.0.0'
 
 // Server extends
 const webrtcServer = require('./servers/webrtc.server')

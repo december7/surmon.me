@@ -1,11 +1,11 @@
-FROM node:carbon
+FROM node:10-slim
 
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
-COPY . /usr/src/app
+RUN mkdir -p /myapp
+WORKDIR /myapp
+COPY . /myapp
+
+EXPOSE 3000 3000
 
 RUN yarn install && yarn cache clean --force && yarn run build
 
-EXPOSE 3000
-
-CMD [ "yarn", "run" , "start" ]
+CMD [ "yarn", "start" ]
